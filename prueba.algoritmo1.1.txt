@@ -1,0 +1,171 @@
+Algoritmo prueba_n_1_menu
+	opciones=entero;
+	  Escribir " Escoja una opcion del menu ";
+	
+	escribir "            Menu     ";
+	Escribir "**********************";
+	Escribir "1.- Secuencial: ";
+	Escribir "2.- Condicional Si entonces: ";
+	Escribir "3.-  Condicional si Entonces Anidado: ";
+	Escribir "4.- Condicional Segun: ";
+    Escribir "5.- Repetitiva Mientras: ";
+	Escribir "6.- Repetitiva Repetir: ";
+	Escribir "7.- Repetitiva Para: ";
+	Escribir "8.- Arreglo Simple: ";
+	Escribir "9.- Arreglo Bidimensional: ";
+	Escribir "10.- Salir ";
+	
+    leer opciones;
+	
+	segun opciones hacer
+		caso 1: limpiar pantalla;
+			escribir "Función 1: Deberá pedir 3 números y mostrar el promedio de estos."
+			escribir " "
+			Definir n1, n2 , n3 , resultado Como Real// variable temporal para cada nota
+			
+			suma <-0
+			Escribir "ingrese numero 1"
+			Leer n1 
+			escribir "ingrese numero 2 "
+			Leer n2
+			escribir "ingrese numero 3 "
+			Leer n3;
+			
+			resultado= n1+n2+n3/3;
+			Escribir "El promedio de sus notas es : ",resultado;
+			
+		caso 2: Limpiar Pantalla;escribir " "
+			definir sexo como caracter;
+			escribir "Función 2: En un lugar tradicional antiguo se pedirá Nombre y Género de la persona,siendo el género determinante para derivarlo al baño de mujeres u hombres."
+			escribir " ";Escribir "Ingrese Nombre: "
+			leer nombre;Escribir "Ingrese el sexo si es hombre H si es mujer M: "
+			leer sexo
+			
+			Si(sexo = "H" o sexo= "h") Entonces
+				Escribir "debe ingresar al bano de hombres  "
+			SiNo
+			Escribir " debe ingresar al bano de mujeres"
+			Fin Si
+	
+		caso 3: Limpiar pantalla;
+			Escribir "Función 3: Considerar función 2, y adicionar cobro de $250 si desea utilizar el baño o $ 2.500 si desea utilizar la ducha. -"
+			escribir " "
+			definir sexo como caracter;
+		    definir uso como caracter;
+			Escribir "Ingrese Nombre: "
+			leer nombre;
+			Escribir "Ingrese el sexo si es hombre H si es mujer M: "
+			Leer  sexo;
+			
+			Escribir "ingrese si quiere usar bano B o ducha D: ";
+			leer uso
+		
+			Si(sexo = "H" o sexo= "h") Entonces
+				Escribir "debe ingresar al bano de hombres  "
+				 
+			SiNo
+				Escribir " debe ingresar al bano de mujeres"
+				
+			Fin Si
+			si (uso="b" O uso="B" ) Entonces
+				Escribir "debe cancelar $250 po rel uso del bano"
+			SiNo
+				Escribir "debe cancelar $2500 por la ducha";
+				
+		FinSi			
+		caso 4:limpiar pantalla
+			Escribir "Función 4: Ingrese un número del 1 al 10 y mostrar el número en palabras";
+			// funcion segun
+			escribir " "
+			definir num como real;
+			escribir "ingrese un numero del 1 al 10";
+			leer num;
+			Segun num Hacer
+				opcion 1:
+					escribir "uno";
+				opcion 2:
+					escribir "dos";
+				opcion 3:
+					escribir "tres";
+				opcion 4:
+					escribir "cuatro";
+				opcion 5:
+					escribir "cinco";
+				opcion 6:
+					escribir "seis";
+				opcion 7:
+					escribir "siete";
+				opcion 8:
+					escribir "ocho";
+				opcion 9:
+					escribir "nueve";
+				opcion 10:
+					escribir "diez";
+				De Otro Modo:
+				Escribir "Numero fuera de rango (1-10)";
+			Fin Segun
+			
+		caso 5:limpiar pantalla
+			escribir"Función 5: Ingresar N números, detener el ingreso al digitar un cero,terminado el proceso mostrar la cantidad de números ingresados excluyendo el 0, finalmente, calcular el promedio de estos números."
+			escribir " "
+			definir n,cant,acum,num como real;
+			n<-0;
+			num<-0;
+			cant<-0;
+			acum<-1;
+			Escribir "ingrese numero: "
+			leer n 
+//			Mientras expresion_logica Hacer
+//				secuencia_de_acciones
+//			Fin Mientras
+//			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		caso 6:limpiar pantalla
+			
+			escribir " ";Escribir "Función 6: Ingresar N nombres con “J”, cuando ingrese el nombre Juan,me diga “Ganaste” y muestre la cantidad de intentos antes de haber ganado.";
+			
+			
+			
+			
+			
+			
+			
+			
+		caso 7:limpiar pantalla
+			escribir " ";escribir"Función 7: Para un máximo de 10 personas preguntar su nombre y mostrar los que repiten más de 1 vez, en caso que los nombres no se repitan mostrar que no existen nombres repetidos"
+		caso 8:limpiar pantalla
+			escribir " ";Escribir "Función 8: Pedir el tamaño de un arreglo en el cual debo ingresar la lista de Talentos Digitales Full Satck Java para luego desplegarlos en pantalla con un máximo de 5 alumnos por línea"
+			
+		caso 9:limpiar pantalla
+			escribir " ";Escribir "Función 9. Ingresar nombre, apellido, fono y email de cada participante del curso Full Satck Java Trainee,mostrar todos los datos de cada alumno en 1 línea"
+		caso 10:limpiar pantalla
+			
+			de otro modo 
+			escribir "opcion fuera de rango (1-10)";
+	FinSegun
+	
+FinAlgoritmo	 
